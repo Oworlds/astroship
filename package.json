@@ -21,6 +21,7 @@
     "@iconify-json/bx": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.98",
     "@iconify-json/uil": "^1.2.3",
+    "@lucide/astro": "^1.66.0",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.5",
