@@ -10,24 +10,24 @@
     'Source Serif 4', ui-serif, Georgia, Cambria, 'Times New Roman', Times,
     serif;
 
-  /* Oworld dark palette */
+  /* Oworld charcoal palette */
   --color-background: #0a0a0a;
-  --color-foreground: #ffffff;
-  --color-card: #0a0a0a;
-  --color-card-foreground: #ffffff;
-  --color-primary: #3fc6e6;
-  --color-primary-foreground: #001217;
-  --color-primary-hover: #1ea9cb;
-  --color-secondary: #8fe0f2;
-  --color-secondary-foreground: #001217;
-  --color-muted: #0a0a0a;
-  --color-muted-foreground: #8fe0f2;
-  --color-accent: #3fc6e6;
-  --color-accent-foreground: #001217;
-  --color-border: color-mix(in srgb, #3fc6e6 25%, transparent);
-  --color-ring: #3fc6e6;
+  --color-foreground: #fafafa;
+  --color-card: #121212;
+  --color-card-foreground: #fafafa;
+  --color-primary: #38bdf8;
+  --color-primary-foreground: #000000;
+  --color-primary-hover: #0284c7;
+  --color-secondary: #a1a1aa;
+  --color-secondary-foreground: #fafafa;
+  --color-muted: #121212;
+  --color-muted-foreground: #a1a1aa;
+  --color-accent: #38bdf8;
+  --color-accent-foreground: #000000;
+  --color-border: #27272a;
+  --color-ring: #38bdf8;
   --color-success: #5fd38a;
-  --color-deep: #000000;
+  --color-deep: #0c0c0c;
 }
 
 :root {
@@ -35,14 +35,14 @@
   --foreground: 0 0% 100%;
   --card: 0 0% 3.9%;
   --card-foreground: 0 0% 100%;
-  --primary: 191 77% 57.5%;
-  --primary-foreground: 193 100% 4.5%;
-  --muted: 0 0% 3.9%;
-  --muted-foreground: 191 79.2% 75.5%;
-  --accent: 191 77% 57.5%;
-  --accent-foreground: 193 100% 4.5%;
-  --border: 191 77% 57.5%;
-  --ring: 191 77% 57.5%;
+  --primary: 199 92% 60%;
+  --primary-foreground: 0 0% 0%;
+  --muted: 0 0% 7%;
+  --muted-foreground: 240 4% 65%;
+  --accent: 199 92% 60%;
+  --accent-foreground: 0 0% 0%;
+  --border: 240 4% 16%;
+  --ring: 199 92% 60%;
   --success: 142 56.9% 60%;
   color-scheme: dark;
 }

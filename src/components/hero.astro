@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import Link from "@/components/ui/link.astro";
 import heroScreenshot from "@/assets/hero-screenshot.png";
 
 const discordUrl = "https://discord.gg/ecYDZgumB";
@@ -10,80 +9,64 @@ const discordUrl = "https://discord.gg/ecYDZgumB";
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 gap-8">
   <!-- Left Column: Copy & CTAs -->
   <div>
-    <!-- Badge -->
     <span
-      class="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/30">
+      class="text-xs font-medium uppercase tracking-wider text-zinc-300 bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800">
       Zero Backend • Data Sovereignty
     </span>
-    <!-- Headline -->
     <h1
-      class="text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground mt-4 leading-tight">
+      class="text-4xl lg:text-5xl font-extrabold tracking-tight text-white mt-4 leading-tight">
       Master the USMLE with Oworld. <br />
-      <span class="text-primary">No subscriptions. No data selling.</span>
+      <span class="text-zinc-100">No subscriptions. No data selling.</span>
     </h1>
-    <!-- Body Text -->
-    <p
-      class="text-base lg:text-lg mt-4 text-muted-foreground max-w-xl leading-relaxed">
+    <p class="text-base lg:text-lg mt-4 text-zinc-400 max-w-xl leading-relaxed">
       A free, open-source USMLE board prep engine built by a medical student.
       Run realistic NBME-style exam blocks 100% client-side in your browser,
       sync your analytics privately via Google Drive, and import community-vetted
       Qbank recipes from Discord and GitHub.
     </p>
-    <!-- Key Feature Pills -->
-    <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-muted-foreground">
-      <span
-        class="bg-card px-2.5 py-1 rounded-md border border-border"
+    <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
+      <span class="bg-zinc-900 text-zinc-300 px-2.5 py-1 rounded-md border border-zinc-800"
         >⚡ Instant local sql.js</span
       >
-      <span
-        class="bg-card px-2.5 py-1 rounded-md border border-border"
+      <span class="bg-zinc-900 text-zinc-300 px-2.5 py-1 rounded-md border border-zinc-800"
         >🔒 100% Private Drive Sync</span
       >
-      <span
-        class="bg-card px-2.5 py-1 rounded-md border border-border"
+      <span class="bg-zinc-900 text-zinc-300 px-2.5 py-1 rounded-md border border-zinc-800"
         >🧬 Community Qhub Decks</span
       >
     </div>
-    <!-- CTA Buttons -->
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        class="font-semibold px-6 py-3 rounded-lg shadow-md text-center"
-        href="https://app.oworld.pro"
-        style="primary">
+      <a
+        class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#38bdf8] text-black font-medium hover:bg-[#0284c7] transition-all text-center"
+        href="https://app.oworld.pro">
         Launch App
-      </Link>
-      <Link
-        class="font-semibold px-6 py-3 rounded-lg text-center"
+      </a>
+      <a
+        class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-zinc-900/80 border border-zinc-700 text-zinc-200 hover:bg-zinc-800 transition-all text-center"
         href={discordUrl}
         rel="noopener noreferrer"
-        style="outline"
         target="_blank">
-        Join Discord & Qhub
-      </Link>
+        Join Discord
+      </a>
     </div>
   </div>
-  <!-- Right Column: App Screenshot with Clean Frame -->
+  <!-- Right Column: Console screenshot in a dark browser frame -->
   <div class="py-6 w-full max-w-2xl lg:max-w-none">
-    <div class="relative rounded-2xl bg-slate-900/5 p-2 ring-1 ring-inset ring-slate-900/10 lg:rounded-2xl lg:p-4">
-      <div class="rounded-xl bg-slate-900 shadow-2xl ring-1 ring-slate-900/10 overflow-hidden">
-        <!-- Browser Top Bar -->
-        <div class="flex items-center space-x-2 bg-slate-900 px-4 py-3 border-b border-slate-800">
-          <div class="w-3 h-3 rounded-full bg-red-500"></div>
-          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div class="w-3 h-3 rounded-full bg-green-500"></div>
-          <span class="text-xs text-slate-400 font-mono ml-2">app.oworld.pro</span>
-        </div>
-
-        <!-- Unclipped Screenshot Display -->
-        <div class="w-full bg-slate-950 flex justify-center items-center p-2">
-          <Image
-            alt="Oworld USMLE Exam Simulator Interface"
-            class="w-full h-auto object-contain rounded-lg"
-            loading="eager"
-            quality="high"
-            src={heroScreenshot}
-          />
-        </div>
+    <div class="rounded-xl bg-[#0c0c0c] border border-zinc-800 overflow-hidden">
+      <div class="flex items-center gap-2 px-4 py-3 border-b border-zinc-800">
+        <div class="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#febc2e]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#28c840]"></div>
+        <span class="text-xs text-zinc-500 font-mono ml-2">app.oworld.pro</span>
+      </div>
+      <div class="w-full bg-[#0c0c0c]">
+        <Image
+          alt="Oworld exam interface with a question, answer choices, and lab values"
+          class="w-full h-auto object-contain object-top"
+          loading="eager"
+          quality="high"
+          src={heroScreenshot}
+        />
       </div>
     </div>
   </div>

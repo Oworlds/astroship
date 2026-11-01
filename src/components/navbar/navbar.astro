@@ -1,13 +1,16 @@
 ---
 import Container from "@/components/container.astro";
-import Link from "@/components/ui/link.astro";
 ---
 
 <Container>
   <header class="flex justify-between items-center my-5">
     <a href="/" class="text-lg"
-      ><span class="font-bold tracking-wide text-primary">OWORLD</span>
+      ><span class="font-bold tracking-wide text-zinc-100">OWORLD</span>
     </a>
-    <Link href="https://app.oworld.pro" size="md" style="ghost">Launch Oworld</Link>
+    <a
+      href="https://app.oworld.pro"
+      class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-[#38bdf8] text-black text-sm font-medium hover:bg-[#0284c7] transition-all">
+      Launch Oworld
+    </a>
   </header>
 </Container>
